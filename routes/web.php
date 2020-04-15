@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 
 Route::get('/admin', 'AdminController@login');
+
+Route::get('contact-us', 'contactController@contactUS');
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'contactController@contactUSPost']);
